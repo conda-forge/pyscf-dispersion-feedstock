@@ -1,6 +1,6 @@
 context:
   name: pyscf-dispersion
-  version: "1.5.0"
+  version: "1.7.0"
   # ensure is_freethreading gets detected as a used variable
   touch_is_freethreading: ${{ is_freethreading }}
 
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://github.com/pyscf/dispersion/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: 3c4e693bfdfb9cfe24c7afe86cec3a94d4979b62c2d7751e0c6a209868c25d3b
+  sha256: 1f7e46785f4fd8f0fffc467bbd2f44915b20e249f7ba52b1acdc5c9dadef69ca
   patches:
     - patches/0001-linearly-order-build-steps.patch
 
